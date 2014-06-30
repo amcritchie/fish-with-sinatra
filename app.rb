@@ -7,7 +7,7 @@ class FishApp < Sinatra::Base
   end
 
   get '/salmon' do
-    erb :salmon
+    erb :salmon, :locals => {:fish_name => "Atlantic Salmon"}
   end
 
   get '/trout' do
